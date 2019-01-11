@@ -135,7 +135,7 @@ p {
 
 .about-sections div:nth-child(2),
 .about-sections div:nth-child(3) {
-    border-bottom: 1px dashed grey;
+    border-bottom: 1px dashed lightgray;
     margin-bottom: 40px;
 }
 
@@ -154,11 +154,11 @@ p {
 
 .about-sections div a {
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 8px;
     color: black;
     display: inline-block;
     margin: 10px 0 20px 0;
-    padding: 5px 10px;
+    padding: 5px 12px;
     text-decoration: none;
 }
 
