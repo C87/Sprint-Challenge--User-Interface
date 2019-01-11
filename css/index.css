@@ -67,8 +67,9 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .header {
@@ -225,4 +226,45 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .header nav a {
+        /* border: 1px solid blue; */
+        color: black;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: bottom;
+        width: 15%;
+    }
+
+    .middle-content .boxes .box {
+        width: 30%;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .top-content {
+        display: block;
+    }
+
+    .top-content .text-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .bottom-content {
+        display: block;
+    }
+
+    .bottom-content .text-container {
+        padding: 20px;
+    }
+
+    
 }

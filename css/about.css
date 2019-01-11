@@ -67,8 +67,9 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .header {
@@ -189,4 +190,46 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .header nav a {
+        /* border: 1px solid blue; */
+        color: black;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: bottom;
+        width: 15%;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-sections {
+        display: block;
+    }
+
+    .about-sections div {
+        /* border: 1px solid red; */
+        margin: auto;
+        /* padding: 15px; */
+        width: calc(100% - 100px);
+    }
+
+    .about-sections div:nth-child(2) {
+        margin-top: 40px;
+    }
+
+    .about-sections div {
+        margin-bottom: 40px;
+    }
+
+    .about-sections div:nth-child(4),
+    .about-sections div:nth-child(5) {
+        border-bottom: 1px dashed lightgrey;
+    }
 }
